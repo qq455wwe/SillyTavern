@@ -1,8 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
-<title>SillyTavern</title>
+<!-- cocktail-plus early bridge start -->
+<script type="importmap" id="cocktail-plus-module-import-map" data-cp-module-proxy-importmap="1">{"imports":{"/script.js":"/api/plugins/cocktail-plus/module?path=%2Fscript.js","/scripts/extensions.js":"/api/plugins/cocktail-plus/module?path=%2Fscripts%2Fextensions.js","/scripts/i18n.js":"/api/plugins/cocktail-plus/module?path=%2Fscripts%2Fi18n.js","/scripts/system-messages.js":"/api/plugins/cocktail-plus/module?path=%2Fscripts%2Fsystem-messages.js","/scripts/welcome-screen.js":"/api/plugins/cocktail-plus/module?path=%2Fscripts%2Fwelcome-screen.js"}}</script>
+<script id="cocktail-plus-early-bridge" src="/api/plugins/cocktail-plus/early/bridge.js" data-cocktail-plus-early="1"></script>
+<!-- cocktail-plus early bridge end -->
+
+    <title>SillyTavern</title>
     <base href="/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content">
@@ -8201,8 +8206,8 @@
     <script type="module" src="lib/structured-clone/monkey-patch.js"></script>
     <script type="module" src="lib/swiped-events.js"></script>
     <script type="module" src="lib/eventemitter.js"></script>
-    <script type="module" src="scripts/i18n.js"></script>
-    <script type="module" src="script.js"></script>
+    <script data-cp-module-proxy-original="scripts/i18n.js" type="module" src="/api/plugins/cocktail-plus/module?path=%2Fscripts%2Fi18n.js"></script>
+    <script data-cp-module-proxy-original="script.js" type="module" src="/api/plugins/cocktail-plus/module?path=%2Fscript.js"></script>
     <script>
         window.addEventListener('load', (event) => {
             const documentHeight = () => {
@@ -8216,4 +8221,3 @@
 </body>
 
 </html>
-
